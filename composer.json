@@ -1,14 +1,14 @@
 {
-    "name": "clothing/clickhouse-log",
+    "name": "justontheroad/clickhouse-log",
     "type": "library",
     "description": "Clothing clickhouse-log components",
 	"license": "MIT",
-    "homepage": "http://gitlab.egomsl.com/clothing/packages/clickhouse-log.git",
+    "homepage": "https://github.com/justontheroad/clickhouse-log.git",
 	"minimum-stability": "stable",
     "authors": [
         {
-            "name": "laizebiao",
-            "email": "laizebiao@globalegrow.com"
+            "name": "justontheroad",
+            "email": "justontheroad@github.com"
         }
     ],
     "require": {
