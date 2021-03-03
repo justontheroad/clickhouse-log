@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use Clothing\ClickHouseLog\{
+use justontheroad\ClickHouseLog\{
     ClickHouseClient,
     LogToClickHouse,
     LogManager,

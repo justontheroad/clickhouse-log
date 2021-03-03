@@ -1,6 +1,6 @@
 <?php
 
-namespace Clothing\ClickHouseLog;
+namespace justontheroad\ClickHouseLog;
 
 use \Exception as Exception;
 

@@ -1,42 +1,9 @@
 # 服装 ClickHouse 日志
 ## composer 安装本项目
-1. 编辑 composer.json，新增以下代码：
-    ```json
-    {
-        "repositories": [
-            {
-                "url": "http://gitlab.egomsl.com/clothing/packages/clickhouse-log",
-                "type": "git"
-            },
-        ],
-        "require": {
-            "clothing/clickhouse-log": "^1.2"
-        }
-    }
+1. 命令行执行安装
     ```
-2. 命令行执行安装
+    composer require justontheroad/clickhouse-log
     ```
-    composer require clothing/clickhouse-log
-    ```
-3. 常见问题
-    1. 提示没有权限。私有项目，必须是项目成员才能访问，解决办法如下：
-        1. 找gitlab管理员授权；
-        2. 设置git账号
-            ```
-            git config --global user.name "$userName"
-            git config --global user.email "$mail"
-            ```
-    2. 提示“不允许连接”（ Your configuration does not allow connections to http://gitlab.egomsl.com/clothing/packages/clickhouse-log. See https://getcomposer.org/doc/06-config.md#secure-http for details.）。composer 安全http限制，解决办法如下：
-        ```
-        # 默认禁用https请求
-        # 本地的
-        composer config secure-http false
-        # 全部的
-        composer config -g secure-http false
-        ```
-    3. git子模块问题
-        1. composer require 内网 gitlab 项目，多余的 .git目录出现在 vendor 中
-## 
 
 ## ClickHouse Client 使用示例
 
@@ -133,7 +100,7 @@ $clickHouseConfig = [
 
 ### 引入
 ```
-use Clothing\ClickHouseLog\ClickHouseClient;
+use justontheroad\ClickHouseClient;
 ```
 
 ### 添加数据
