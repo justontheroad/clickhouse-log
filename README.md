@@ -100,7 +100,7 @@ $clickHouseConfig = [
 
 ### 引入
 ```
-use justontheroad\ClickHouseClient;
+use justontheroad\ClickHouseLog\ClickHouseClient;
 ```
 
 ### 添加数据
