@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Clothing\ClickHouseLog;
+namespace justontheroad\ClickHouseLog;
 
 use \SplFileObject as SplFileObject;
 use \Exception as Exception;
